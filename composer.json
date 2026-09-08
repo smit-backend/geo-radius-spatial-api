@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/geo-radius-spatial-api",
+    "description": "Optimized spatial MySQL boundary query engine delivering microsecond nearby-location calculations for mobile apps.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\GeoBound\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\GeoBound\\PackageServiceProvider"
+            ]
+        }
+    }
+}
